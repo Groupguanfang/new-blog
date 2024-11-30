@@ -10,7 +10,6 @@ declare module 'vue' {
     Background: typeof import('./components/background.vue')['default']
     Footer: typeof import('./components/footer.vue')['default']
     Header: typeof import('./components/header.vue')['default']
-    HomeBackground: typeof import('./components/home-background.vue')['default']
     ImageCard: typeof import('./components/image-card.vue')['default']
     InfoItem: typeof import('./components/info-item.vue')['default']
     InlinePopover: typeof import('./components/inline-popover.vue')['default']

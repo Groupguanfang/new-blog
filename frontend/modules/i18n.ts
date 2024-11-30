@@ -46,5 +46,5 @@ export async function loadLanguageAsync(lang: string): Promise<Locale> {
 
 export const install: UserModule = ({ app }) => {
   app.use(i18n)
-  loadLanguageAsync(localStorage.getItem(LocaleStorageKey) || 'zh-CN')
+  loadLanguageAsync(globalThis?.localStorage?.getItem(LocaleStorageKey) || 'zh-CN')
 }
