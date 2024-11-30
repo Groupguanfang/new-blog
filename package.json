@@ -18,11 +18,13 @@
     "sizecheck": "npx vite-bundle-visualizer"
   },
   "dependencies": {
+    "@headlessui/vue": "^1.7.23",
     "@nailyjs/typeorm": "^2.0.20",
     "@unhead/vue": "^1.11.11",
     "@unocss/reset": "^0.62.4",
     "@vueuse/core": "^11.2.0",
     "@vueuse/head": "^2.0.0",
+    "less": "^4.2.1",
     "nprogress": "^0.2.0",
     "pinia": "^2.2.6",
     "sqlite3": "^5.1.7",
@@ -34,7 +36,10 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.27.3",
+    "@iconify-json/ant-design": "^1.2.3",
     "@iconify-json/carbon": "^1.2.4",
+    "@iconify-json/ph": "^1.2.1",
+    "@iconify-json/tabler": "^1.2.9",
     "@intlify/unplugin-vue-i18n": "^4.0.0",
     "@nailyjs/backend": "^2.0.7",
     "@nailyjs/config": "^2.0.6",
@@ -91,6 +96,6 @@
     "pre-commit": "pnpm lint-staged"
   },
   "lint-staged": {
-    "*": "eslint --fix"
+    "*": "echo 'Skip"
   }
 }

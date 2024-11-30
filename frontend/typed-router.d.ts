@@ -20,9 +20,15 @@ declare module 'vue-router/auto-routes' {
   export interface RouteNamedMap {
     '/': RouteRecordInfo<'/', '/', Record<never, never>, Record<never, never>>,
     '/[...all]': RouteRecordInfo<'/[...all]', '/:all(.*)', { all: ParamValue<true> }, { all: ParamValue<false> }>,
-    '/about': RouteRecordInfo<'/about', '/about', Record<never, never>, Record<never, never>>,
-    '/hi/[name]': RouteRecordInfo<'/hi/[name]', '/hi/:name', { name: ParamValue<true> }, { name: ParamValue<false> }>,
-    '/README': RouteRecordInfo<'/README', '/README', Record<never, never>, Record<never, never>>,
-    '/todo': RouteRecordInfo<'/todo', '/todo', Record<never, never>, Record<never, never>>,
+    '/posts/1-mini-nest-js': RouteRecordInfo<'/posts/1-mini-nest-js', '/posts/1-mini-nest-js', Record<never, never>, Record<never, never>>,
+    '/posts/2-component-maintainability': RouteRecordInfo<'/posts/2-component-maintainability', '/posts/2-component-maintainability', Record<never, never>, Record<never, never>>,
+    '/posts/3-nest-prisma-aspect': RouteRecordInfo<'/posts/3-nest-prisma-aspect', '/posts/3-nest-prisma-aspect', Record<never, never>, Record<never, never>>,
+    '/posts/4-dlight': RouteRecordInfo<'/posts/4-dlight', '/posts/4-dlight', Record<never, never>, Record<never, never>>,
+    '/posts/5-rollup-config': RouteRecordInfo<'/posts/5-rollup-config', '/posts/5-rollup-config', Record<never, never>, Record<never, never>>,
+    '/posts/6-vue-ts': RouteRecordInfo<'/posts/6-vue-ts', '/posts/6-vue-ts', Record<never, never>, Record<never, never>>,
+    '/posts/7-auto-scan': RouteRecordInfo<'/posts/7-auto-scan', '/posts/7-auto-scan', Record<never, never>, Record<never, never>>,
+    '/posts/8-apple-watch-2023': RouteRecordInfo<'/posts/8-apple-watch-2023', '/posts/8-apple-watch-2023', Record<never, never>, Record<never, never>>,
+    '/posts/9-2024-first-half-trifles': RouteRecordInfo<'/posts/9-2024-first-half-trifles', '/posts/9-2024-first-half-trifles', Record<never, never>, Record<never, never>>,
+    '/projects': RouteRecordInfo<'/projects', '/projects', Record<never, never>, Record<never, never>>,
   }
 }

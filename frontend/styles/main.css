@@ -8,6 +8,16 @@ body,
   padding: 0;
 }
 
+::selection {
+  background: rgb(35 0 175 / 49%);
+  color: #fff;
+}
+
+html.dark ::selection {
+  background: rgb(222 108 108 / 21%) !important;
+  color: #fff;
+}
+
 html.dark {
   background: #121212;
   color-scheme: dark;

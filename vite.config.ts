@@ -7,6 +7,7 @@ import Unocss from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import { buildServer, defaultSwcOptions, swc } from 'unplugin-rpc'
 import NailyRpc from 'unplugin-rpc/vite'
+import { HeadlessUiResolver } from 'unplugin-vue-components/resolvers'
 import Components from 'unplugin-vue-components/vite'
 import VueMacros from 'unplugin-vue-macros/vite'
 import Markdown from 'unplugin-vue-markdown/vite'
@@ -60,13 +61,13 @@ export default defineConfig({
     VueRouter({
       extensions: ['.vue', '.md'],
       dts: './frontend/typed-router.d.ts',
-      routesFolder: './frontend/pages',
+      routesFolder: './content',
     }),
 
     // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
     Layouts({
       layoutsDirs: './frontend/layouts',
-      pagesDirs: './frontend/pages',
+      pagesDirs: './content',
     }),
 
     // https://github.com/antfu/unplugin-auto-import
@@ -100,6 +101,7 @@ export default defineConfig({
       dirs: [
         './frontend/components',
       ],
+      resolvers: [HeadlessUiResolver()],
     }),
 
     // https://github.com/antfu/unocss

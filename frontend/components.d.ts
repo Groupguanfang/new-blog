@@ -7,11 +7,21 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
-    README: typeof import('./components/README.md')['default']
+    Background: typeof import('./components/background.vue')['default']
+    Footer: typeof import('./components/footer.vue')['default']
+    Header: typeof import('./components/header.vue')['default']
+    HomeBackground: typeof import('./components/home-background.vue')['default']
+    ImageCard: typeof import('./components/image-card.vue')['default']
+    InfoItem: typeof import('./components/info-item.vue')['default']
+    InlinePopover: typeof import('./components/inline-popover.vue')['default']
+    InlineUnderlineText: typeof import('./components/inline-underline-text.vue')['default']
+    Popover: typeof import('@headlessui/vue')['Popover']
+    PopoverButton: typeof import('@headlessui/vue')['PopoverButton']
+    PopoverPanel: typeof import('@headlessui/vue')['PopoverPanel']
+    ProjectCard: typeof import('./components/ProjectCard.vue')['default']
+    ProjectCardGrid: typeof import('./components/ProjectCardGrid.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    TheCounter: typeof import('./components/TheCounter.vue')['default']
-    TheFooter: typeof import('./components/TheFooter.vue')['default']
-    TheInput: typeof import('./components/TheInput.vue')['default']
+    StrokeTitle: typeof import('./components/stroke-title.vue')['default']
   }
 }
