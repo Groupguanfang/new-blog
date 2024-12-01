@@ -30,7 +30,7 @@ function pushToPostDetail(postPath: string) {
   <main mx-3 lg:mx-0 flex="~ col items-center gap-2">
     <Background />
     <Header :title="frontmatter.title" />
-    <div mb5 flex flex-wrap gap2 overflow-x-auto op-70>
+    <div mb5 flex flex-wrap gap2 overflow-x-auto op-70 w-full md:w-auto>
       <InfoItem v-for="(item, index) in frontmatter.section" :key="index" icon="i-carbon-education" content="大学, 大二" :hr="true" v-bind="item" />
     </div>
 

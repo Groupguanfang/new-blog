@@ -10,3 +10,4 @@ node_modules
 cypress/downloads
 .vercel
 /data
+*.zip

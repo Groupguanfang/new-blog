@@ -9,7 +9,7 @@ const { frontmatter } = useRouterViewFrontmatter(routerViewRef)
     <Header v-bind="frontmatter" md:mb-10 />
     <Background />
 
-    <RouterView max-w-4xl :name="locale">
+    <RouterView class="max-w-100%" :name="locale">
       <template #default="{ Component }">
         <div v-if="!Component" class="text-center text-sm opacity-50">
           No {{ locale }} version for this article.

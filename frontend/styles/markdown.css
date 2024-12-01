@@ -14,12 +14,13 @@
 
 .shiki,
 .shiki span {
-  color: var(--shiki-light);
-  background: var(--shiki-light-bg);
+  color: var(--shiki-light) !important;
+  background: var(--shiki-light-bg) !important;
 }
 
 html.dark .shiki,
 html.dark .shiki span {
-  color: var(--shiki-dark);
-  background: var(--shiki-dark-bg);
+  color: var(--shiki-dark) !important;
+  background: var(--shiki-dark-bg) !important;
 }
+
