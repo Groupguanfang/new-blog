@@ -1,6 +1,8 @@
 layouts:
   posts:
     title: Posts
+  focus:
+    title: Current Focus
 
   '404':
     title: Page Not Found

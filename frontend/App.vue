@@ -25,5 +25,18 @@ useHead({
 </script>
 
 <template>
-  <RouterView />
+  <RouterView>
+    <template #default="{ Component }">
+      <KeepAlive>
+        <Suspense>
+          <component :is="Component" />
+          <template #fallback>
+            <div fixed justify-center items-center h-full w-full>
+              Loading...
+            </div>
+          </template>
+        </Suspense>
+      </KeepAlive>
+    </template>
+  </RouterView>
 </template>
