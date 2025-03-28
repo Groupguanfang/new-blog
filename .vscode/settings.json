@@ -30,6 +30,8 @@
     "tencentcloud",
     "typecheck",
     "typeorm",
+    "unbuilderjs",
+    "undts",
     "unocss",
     "unplugin",
     "unproject",

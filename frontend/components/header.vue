@@ -23,6 +23,7 @@ const { toggleLocales } = useSwitchLocale()
         @click="(e) => toggleDark(!isDark, e)"
       />
       <div class="home-button" i-ph-translate-duotone title="切换语言" @click="toggleLocales" />
+      <div class="home-button" i-ph-toolbox-duotone title="工具" @click="$router.push('/tools')" />
     </div>
     <h1 v-if="title" mt-5 w-full font-bold font-size-9 text-left md:font-size-10 md:text-center>
       {{ title }}

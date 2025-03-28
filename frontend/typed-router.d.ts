@@ -21,6 +21,7 @@ declare module 'vue-router/auto-routes' {
     '/': RouteRecordInfo<'/', '/', Record<never, never>, Record<never, never>>,
     '/[...all]': RouteRecordInfo<'/[...all]', '/:all(.*)', { all: ParamValue<true> }, { all: ParamValue<false> }>,
     '/posts/1-mini-nest-js': RouteRecordInfo<'/posts/1-mini-nest-js', '/posts/1-mini-nest-js', Record<never, never>, Record<never, never>>,
+    '/posts/10-undts': RouteRecordInfo<'/posts/10-undts', '/posts/10-undts', Record<never, never>, Record<never, never>>,
     '/posts/2-component-maintainability': RouteRecordInfo<'/posts/2-component-maintainability', '/posts/2-component-maintainability', Record<never, never>, Record<never, never>>,
     '/posts/3-nest-prisma-aspect': RouteRecordInfo<'/posts/3-nest-prisma-aspect', '/posts/3-nest-prisma-aspect', Record<never, never>, Record<never, never>>,
     '/posts/4-dlight': RouteRecordInfo<'/posts/4-dlight', '/posts/4-dlight', Record<never, never>, Record<never, never>>,
@@ -30,5 +31,6 @@ declare module 'vue-router/auto-routes' {
     '/posts/8-apple-watch-2023': RouteRecordInfo<'/posts/8-apple-watch-2023', '/posts/8-apple-watch-2023', Record<never, never>, Record<never, never>>,
     '/posts/9-2024-first-half-trifles': RouteRecordInfo<'/posts/9-2024-first-half-trifles', '/posts/9-2024-first-half-trifles', Record<never, never>, Record<never, never>>,
     '/projects': RouteRecordInfo<'/projects', '/projects', Record<never, never>, Record<never, never>>,
+    '/tools': RouteRecordInfo<'/tools', '/tools', Record<never, never>, Record<never, never>>,
   }
 }

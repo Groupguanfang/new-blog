@@ -16,7 +16,7 @@ function reverseObject(obj: Record<string, any>) {
 }
 
 function pushToPostDetail(postPath: string) {
-  const pathname = URL.parse(postPath, import.meta.url)?.pathname
+  const pathname = new URL(postPath, import.meta.url)?.pathname
   const basename = pathname?.substring(pathname?.lastIndexOf('/') + 1)
     .replace(/\.md$/, '')
     .replace(/@.*/, '')
@@ -62,7 +62,7 @@ function pushToPostDetail(postPath: string) {
       <div
         v-for="(item, index) in postList" :key="index"
         cursor-pointer flex="~ col items-center" break-inside-avoid
-        dark:hover:bg-dark-1 hover:bg-gray-300 hover:bg-op-70 hover:backdrop-blur-sm
+        dark:hover:bg-dark-1 hover:bg-gray-200 hover:bg-op-70 hover:backdrop-blur-sm
         transition-all px-5 py-5 rounded-2xl @click="pushToPostDetail(index)"
       >
         <div v-if="item.cover" mb-2 w-full>
